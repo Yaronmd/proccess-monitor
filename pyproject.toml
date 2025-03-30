@@ -1,0 +1,20 @@
+[project]
+name = "proccess-monitor"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Yaronmd",email = "yaronmord@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "psutil (>=7.0.0,<8.0.0)",
+    "rich (>=13.9.4,<14.0.0)",
+    "pytest (>=8.3.5,<9.0.0)",
+    "allure-pytest (>=2.13.5,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
