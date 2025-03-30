@@ -52,7 +52,7 @@ The `app.py` script is the **main entry point** for the project. It automates pr
 - **Fetches Running Processes** – Retrieves all active process names.
 - **Random Process Selection** *(Optional)* – Can randomly select a subset of processes if specified.
 - **Generates a Monitoring Command** – Constructs the command to execute `monitor.py`.
-- **Runs Monitoring Automatically** – Executes the command using `subprocess.run()`.
+- **Runs Monitoring Automatically** – Executes the command using `subprocess`.
 
 This simplifies process monitoring compared to manually running `monitor.py`.
 
