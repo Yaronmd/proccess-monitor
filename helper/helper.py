@@ -18,7 +18,7 @@ def get_processes() -> list:
         raise ValueError("Failed to find any processes.")
     return list(monitored)  # Convert set to list for further processing
 
-def generate_and_run_command_prompt(processes: list, number_of_processes: Optional[int] = None, interval: int = 1) -> None:
+def generate_and_run_command_prompt(processes: list, number_of_processes: Optional[int] = None, interval: int = 3) -> None:
     """
     Generates a command to run the monitor script and executes it.
 

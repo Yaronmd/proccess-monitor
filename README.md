@@ -33,6 +33,7 @@ pip install -r requirements.txt
 
 The `app.py` script is the **main entry point** for the project. It automates process monitoring by dynamically selecting processes and running the `monitor.py` script.
 
+
 ### 🔹 **What `app.py` Does:**
 - **Fetches Running Processes** – Retrieves all active process names.
 - **Random Process Selection** *(Optional)* – Can randomly select a subset of processes if specified.
@@ -44,6 +45,7 @@ This simplifies process monitoring compared to manually running `monitor.py`.
 ```sh
 python3 app.py
 ```
+See app.py for example usages, including how to run and monitor specific or random processes.
 
 ### 2. Run the Monitoring Script
 ```sh
