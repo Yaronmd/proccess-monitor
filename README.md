@@ -30,25 +30,7 @@ pip install -r requirements.txt
 ## Usage
 
 
-### 1. Execute `app.py`
-
-The `app.py` script is the **main entry point** for the project. It automates process monitoring by dynamically selecting processes and running the `monitor.py` script.
-
-
-###  **What `app.py` Does:**
-- **Fetches Running Processes** – Retrieves all active process names.
-- **Random Process Selection** *(Optional)* – Can randomly select a subset of processes if specified.
-- **Generates a Monitoring Command** – Constructs the command to execute `monitor.py`.
-- **Runs Monitoring Automatically** – Executes the command using `subprocess`.
-
-This simplifies process monitoring compared to manually running `monitor.py`.
-
-```sh
-python3 app.py
-```
-See app.py for example usages, including how to run and monitor specific or random processes.
-
-### 2. Run the Monitoring Script
+### 1. Run the Monitoring Script
 ```sh
 python3 monitor/monitor.py -p process_name1 process_name2 -i 3
 ```
@@ -57,8 +39,21 @@ python3 monitor/monitor.py -p process_name1 process_name2 -i 3
 
 Example:
 ```sh
-python3 monitor/monitor.py -p python chrome -i 5
+python3 monitor/monitor.py -p python chrome zsh -i 5
 ```
+
+
+### Optinal: 2. Execute `app.py`
+
+The `app.py` script automates process monitoring by random selecting processes by using `monitor.py` script.
+
+```sh
+python3 app.py
+```
+
+###  **What `app.py` Does:**
+Fetches running processes, selects a random subset or all processes for monitoring, and executes it.
+See app.py for example usages, including how to run and monitor specific or random processes.
 
 
 
@@ -97,7 +92,4 @@ allure serve allure-results
   ```sh
   npm install -g allure-commandline
   ```
-
-## License
-MIT License. See `LICENSE` for details.
 
