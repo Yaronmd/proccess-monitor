@@ -7,19 +7,6 @@ A Python-based process monitoring tool that allows users to track system process
 - Displays process status updates dynamically using `rich`.
 - Generates test reports using `pytest` and `allure`.
 
-## Description of Key Directories and Files:
-
-- **`app.py`**: Main script for generating and running process monitoring commands.
-- **`monitor/`**: Contains the `monitor.py` script as a module.
-- **`tests/`**: Includes unit tests for your monitoring system.
-- **`test_example.py`**: Example test case to demonstrate how tests are structured.
-  - **`test_monitor.py`**: Contains unit tests to validate the functionality of the `monitor.py` script. This test case can verify if the script correctly executes the monitoring process and handles any errors.
-  - **`conftest.py`**: file is used to define fixtures, mock data.
-- **`allure-results/`**: Directory that stores results from tests executed with Allure integration.
-- **`requirements.txt`**: Lists all the necessary Python packages for the project.
-- **`.gitignore`**: Specifies which files should be ignored by Git (e.g., virtual environment, cache files).
-
-
 
 
 ## Installation
@@ -92,6 +79,17 @@ pytest -s --alluredir=allure-results
 allure serve allure-results
 ```
 
+## Description of Key Directories and Files:
+
+- **`app.py`**: Main script for generating and running process monitoring commands.
+- **`monitor/`**: Contains the `monitor.py` script as a module.
+- **`tests/`**: Includes unit tests for your monitoring system.
+- **`test_example.py`**: Example test case to demonstrate how tests are structured.
+  - **`test_monitor.py`**: Contains unit tests to validate the functionality of the `monitor.py` script. This test case can verify if the script correctly executes the monitoring process and handles any errors.
+  - **`conftest.py`**: file is used to define fixtures, mock data.
+- **`allure-results/`**: Directory that stores results from tests executed with Allure integration.
+- **`requirements.txt`**: Lists all the necessary Python packages for the project.
+- **`.gitignore`**: Specifies which files should be ignored by Git (e.g., virtual environment, cache files).
 
 
 ## Error Handling
