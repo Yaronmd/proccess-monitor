@@ -43,7 +43,7 @@ python3 monitor/monitor.py -p python chrome zsh -i 5
 ```
 
 
-### Optinal: 2. Execute `app.py`
+### Optional: 2. Execute `app.py`
 
 The `app.py` script automates process monitoring by random selecting processes by using `monitor.py` script.
 
