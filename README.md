@@ -1,6 +1,6 @@
 # Process Monitor
 
-A Python-based process monitoring tool that allows users to track system processes, display their status in real-time, and run automated tests using Pytest and Allure.
+A Python-based process monitoring tool that allows users to track system processes, display their status in real-time, including automated unitesting with allure report.
 
 ## Features
 - Monitors specific processes on the system.
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 The `app.py` script is the **main entry point** for the project. It automates process monitoring by dynamically selecting processes and running the `monitor.py` script.
 
 
-### 🔹 **What `app.py` Does:**
+###  **What `app.py` Does:**
 - **Fetches Running Processes** – Retrieves all active process names.
 - **Random Process Selection** *(Optional)* – Can randomly select a subset of processes if specified.
 - **Generates a Monitoring Command** – Constructs the command to execute `monitor.py`.
