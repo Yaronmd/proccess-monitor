@@ -88,8 +88,6 @@ allure serve allure-results
   - **`test_monitor.py`**: Contains unit tests to validate the functionality of the `monitor.py` script. This test case can verify if the script correctly executes the monitoring process and handles any errors.
   - **`conftest.py`**: file is used to define fixtures, mock data.
 - **`allure-results/`**: Directory that stores results from tests executed with Allure integration.
-- **`requirements.txt`**: Lists all the necessary Python packages for the project.
-- **`.gitignore`**: Specifies which files should be ignored by Git (e.g., virtual environment, cache files).
 
 
 ## Error Handling
